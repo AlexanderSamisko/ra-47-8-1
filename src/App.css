@@ -1,3 +1,10 @@
+.App {
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+  font-size: 1vw;
+}
+
 .list {
   padding: none;
   list-style: none;
@@ -9,7 +16,6 @@
   border: 2px solid black;
   display: block;
   width: 100%;
-  font-size: 1vw;
   font-weight: 600;
 }
 
@@ -21,4 +27,24 @@
   background-color: blue;
   color: white;
   font-weight: 1000;
+}
+
+.detail-box {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+
+.detail-box * {
+  display: block;
+  width: 100%;
+  border: 2px solid salmon;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.detail-box *:not(img) {
+  padding: 2vh;
+  border-top: none;
+  font-weight: 500;
 }
